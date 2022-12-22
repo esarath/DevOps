@@ -5,13 +5,20 @@ Pre-requistes:
 
 
 Create AKS cluster in Azure portal directly
+
 Create AKS cluster using Azure CLI (refer AKS repositary: https://github.com/esarath/AKS/tree/main/Create%20AKS%20using%20azure%20CLI )
+
 Create AKS cluster using Terraform (refer terraform repositary: https://github.com/esarath/Terraform/tree/main/AKS_Cluster )
+
 2. ACR is also setup in Azure cloud. 
+
 3. Have Azure DevOps project dashboard in 
        https://dev.azure.com/
+       
 4. Dockerfile created along with the application source code for springboot App.
+
 5. Make sure AKS has pull access from ACR
+
 6. Modify K8S manifest file per acr, image name for AKS Deployment
 
 Implementation Steps:
