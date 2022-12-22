@@ -5,8 +5,8 @@ Pre-requistes:
 
 
 Create AKS cluster in Azure portal directly
-Create AKS cluster using Azure CLI
-Create AKS cluster using Terraform
+Create AKS cluster using Azure CLI (refer AKS repositary: https://github.com/esarath/AKS/tree/main/Create%20AKS%20using%20azure%20CLI )
+Create AKS cluster using Terraform (refer terraform repositary: https://github.com/esarath/Terraform/tree/main/AKS_Cluster )
 2. ACR is also setup in Azure cloud. 
 3. Have Azure DevOps project dashboard in 
        https://dev.azure.com/
