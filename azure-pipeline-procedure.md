@@ -1,5 +1,5 @@
->>> Here is a general step-by-step procedure for creating an Azure pipeline:
-========================================================================
+> Here is a general step-by-step procedure for creating an Azure pipeline:
+===========================================
 
 Go to the Azure DevOps portal and create a new project or open an existing one.
 
