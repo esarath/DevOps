@@ -1,0 +1,6 @@
+The default interaction model with Jenkins, historically, has been very web UI driven, requiring users to manually create jobs, then manually fill in the details through a web browser. This requires additional effort to create and manage jobs to test and build multiple projects, it also keeps the configuration of a job to build/test/deploy separate from the actual code being built/tested/deployed. This prevents users from applying their existing CI/CD best practices to the job configurations themselves.
+
+>>> Follow below official link for more information and Demos:
+       
+       https://www.jenkins.io/solutions/pipeline/
+       
