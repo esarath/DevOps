@@ -1,0 +1,30 @@
+What does a branching workflow look like?
+Step 1: When you begin to work on a new feature or bug fix, the first thing you want to do is ensure that you're starting with the latest stable code base. To do this, you can synchronize your local copy of the main branch with the server's copy. This pulls into your local copy all other developer changes that were pushed to the main branch on the server since your last synch.
+
+Diagram of a pull from the remote main branch into the local main branch.
+
+Step 2: To ensure that you're working only on your copy of the code, you create a new branch just for that feature or bug fix. As you can imagine, having many branches for all the things you're doing might get hard to remember, so using a good naming convention is critical.
+
+Before you make changes to a file, you check out a new branch so that you know you're working on the files from that branch and not from a different branch. You can switch branches anytime by checking out that branch.
+
+Diagram of a new branch being created in the local repository.
+
+Step 3: You're now safe to make whatever changes you want because these changes are only in your branch. As you work, you can commit your changes to your branch to ensure that you don't lose any work, and to provide a way to roll back any changes you've made to earlier versions. Before you can commit changes, you need to stage your files so that Git knows which ones you're ready to commit.
+
+Diagram of the commits being made to the local branch.
+
+Step 4: The next step is to push, or upload, your local branch up to the remote repository (such as GitHub) so that others can see what you're working on. Don't worry, this won't merge your changes yet. You can push up your work as often as you'd like. In fact, that's a good way to back up your work or enable yourself to work from multiple computers.
+
+Diagram of the local commits being pushed to the remote repository.
+
+Step 5: This step is a common one, but not required. When you're satisfied that your code is working as you want it to, you can pull, or merge, the remote main branch back into your local main branch. Changes have been taking place there that your local main branch doesn't have yet. After you've synchronized the remote main branch with yours, merge your local main branch into your working branch and test your build again.
+
+This process helps ensure that your feature works with the latest code. It also helps ensure that your work will integrate smoothly when you submit your pull request.
+
+Diagram of the remote changes being pulled down into the local repository.
+
+Step 6: Your local code now needs to be committed and pushed up to the hosted repository. This is the same as steps 3 and 4.
+
+Diagram of the merged commits being pushed to the remote repository.
+
+Step 7: You're finally ready to propose your changes to the remote main branch. To do this, you begin a pull request. When configured in Azure Pipelines or another CI/CD system, this step triggers the build process, and you can watch your changes move through the pipeline. After the build succeeds and others approve your pull request, your code can be merged into the remote main branch. (It's still up to a human to merge the changes.)
