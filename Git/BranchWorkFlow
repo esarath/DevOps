@@ -1,3 +1,5 @@
+
+
 What does a branching workflow look like?
 Step 1: When you begin to work on a new feature or bug fix, the first thing you want to do is ensure that you're starting with the latest stable code base. To do this, you can synchronize your local copy of the main branch with the server's copy. This pulls into your local copy all other developer changes that were pushed to the main branch on the server since your last synch.
 
